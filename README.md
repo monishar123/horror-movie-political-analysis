@@ -27,9 +27,11 @@ Opportunity
 •	By analyzing the themes and narratives of popular horror movies across different decades, this project leverages the opportunity to illuminate the complex relationship between film and politics. It aims to provide a deeper understanding of how horror films can serve as cultural commentaries, revealing societal concerns and influencing public perception. This exploration can foster greater appreciation for the horror genre as a significant medium for social critique and historical reflection.
 
 Goal 1: Primary Goal
+
 To analyze popular horror movies from various decades to understand how their themes, narratives, and societal anxieties reflect and respond to the political environment of their respective times. This will involve identifying key films that exemplify these connections and drawing conclusions about the horror genre’s role as a cultural commentary.
 
 Goal 2: Additional Goals/Objectives
+
 1.	Identify Patterns: Examine recurring themes and motifs within horror films across different decades, linking them to significant political events and societal changes.
 2.	Cultural Analysis: Investigate how horror films portray marginalized groups and address social justice issues, highlighting the genre's evolution in response to shifting societal attitudes.
 3.	Create a Visual Representation: Develop a timeline or visual aid that maps the release of notable horror films against major political events to illustrate correlations between film and political climate.
