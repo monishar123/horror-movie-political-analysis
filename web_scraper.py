@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # URL of the horror movie list (replace with an actual URL)
-url = 'https://example.com/horror-movies'  # <-- Change this URL
+url = "https://real-movie-data-source.com" # <-- Change this URL
 
 # Make a request to fetch the webpage
 response = requests.get(url)
@@ -18,3 +18,4 @@ if response.status_code == 200:
         print(title.text)  # Print each movie title
 else:
     print("Failed to retrieve the page.")
+movie_titles = soup.find_all('h2', class_='movie-title')  # Adjust to real tags/classes
