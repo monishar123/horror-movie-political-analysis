@@ -73,48 +73,70 @@ Analyze how horror movies from various decades reflect and respond to the politi
 
 ---
 
-## How to Run the Project
+### Project Steps and Instructions
 
-### Prerequisites
-1. **Python**: Ensure Python 3.7+ is installed.
-2. **Virtual Environment**:
+#### Prerequisites
+
+1. **Install Python**:
+   - Ensure **Python 3.7+** is installed on your system. [Download Python here](https://www.python.org/downloads/).
+
+2. **Set Up a Virtual Environment**:
+   - Create a virtual environment:
+     ```bash
+     python -m venv env
+     ```
+   - Activate the virtual environment:
+     - For **Mac/Linux**:
+       ```bash
+       source env/bin/activate
+       ```
+     - For **Windows**:
+       ```bash
+       .\env\Scripts\activate
+       ```
+
+3. **Install Dependencies**:
+   - Run the following command to install the required libraries:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+---
+
+#### Run the Scripts
+
+1. **Web Scraper**: Fetch movie data using the `web_scraper.py` script:
    ```bash
-   python -m venv env
-   source env/bin/activate  # For Mac/Linux
-   .\env\Scripts\activate   # For Windows
-3. Run the Scripts:
-
-Web Scraper: Fetch movie data using the web_scraper.py script:
-bash
-Copy code
-python web_scraper.py
+   python web_scraper.py
 Convert Excel to CSV: Convert political events from Excel to CSV format:
+
 bash
 Copy code
 python convert_excel_to_csv.py
 Integrate Data: Combine movie and political event datasets:
+
 bash
 Copy code
 python data_integration.py
 Analyze Data: Perform analysis and generate visualizations:
+
 bash
 Copy code
 python analyze_data.py
-4. Visualizations:
-
+Visualizations
 Generated charts and graphs are saved as .png files in the project directory.
 Open and review these visualizations to explore the insights.
-5. Push Changes to GitHub:
+Push Changes to GitHub
+Stage and Commit Your Changes:
 
-Stage and commit your changes:
 bash
 Copy code
 git add .
 git commit -m "Updated project with analysis and visualizations"
-Push the changes to your GitHub repository:
+Push Changes:
+
 bash
 Copy code
 git push
-
 Conclusion
 This project reveals the intersection of horror movies and political climates across decades, highlighting the horror genre as a medium for cultural commentary and historical reflection.
