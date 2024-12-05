@@ -1,4 +1,5 @@
 import os
+import json  # Import json to save data
 import requests
 from dotenv import load_dotenv
 
@@ -26,24 +27,26 @@ decades = {
     "2010s": ("2010", "2019"),
 }
 
-# Dictionary to store movies by decade
-movies_by_decade = {}
+# List to store all movies
+all_movies = []
 
 # Loop through each decade, fetch movies, and store them
 for decade, (start, end) in decades.items():
     print(f"Fetching horror movies from the {decade}...")
     movies = fetch_movies_by_decade(start, end)
-    movies_by_decade[decade] = movies
+    all_movies.extend(movies)  # Append all movies to a single list
     # Print the titles of movies for each decade
     for movie in movies:
         print(movie['title'])
 
-# Optional: print summary
+# Save all fetched movies to a JSON file
+with open("movies.json", "w", encoding="utf-8") as f:
+    json.dump(all_movies, f, indent=4)
+
+# Print a summary
 print("\nSummary of fetched movies by decade:")
-for decade, movies in movies_by_decade.items():
+for decade, movies in decades.items():
     print(f"{decade}: {len(movies)} movies")
 
+print("\nMovies have been saved to movies.json.")
 print(f"Using API Key: {API_KEY}")
-
-
-

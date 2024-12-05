@@ -51,64 +51,119 @@ To analyze popular horror movies from various decades to understand how their th
 
 ### Steps to Run the Project
 
-1. **Collect Data**:
-   - Run the data collection script to fetch horror movie data:
+1. **Activate Virtual Environment**:
+   - Navigate to your project directory:
      ```bash
-     python collect_movies.py
+     cd ~/Documents/Projects/horror-movie-analysis-main/horror-movie-political-analysis
      ```
-   - Retrieve political event data using the API integration script:
+   - Activate the virtual environment:
+     - For **Git Bash**:
+       ```bash
+       source .venv/Scripts/activate
+       ```
+     - For **Command Prompt**:
+       ```cmd
+       .venv\Scripts\activate
+       ```
+
+2. **Install Dependencies**:
+   - Ensure all required packages are installed:
      ```bash
-     python collect_political_data.py
+     pip install -r requirements.txt
      ```
 
-2. **Process Data**:
-   - Clean and preprocess the collected data:
-     ```bash
-     python preprocess_data.py
+3. **Set Up Environment Variables**:
+   - If your project uses an API key (like TMDB API key), create a `.env` file in your project’s root directory with the following content:
+     ```text
+     TMDB_API_KEY=your_api_key_here
      ```
+   - Make sure to replace `your_api_key_here` with your actual API key.
 
-3. **Analyze Data**:
-   - Perform analysis to identify patterns and trends:
+4. **Run the Data Analysis Script**:
+   - Execute the script to load, process, and analyze the movie and political events data:
      ```bash
      python analyze_data.py
      ```
 
-4. **Visualize Results**:
-   - Generate visualizations such as timelines or trend graphs:
-     ```bash
-     python generate_visualizations.py
+5. **Review Output**:
+   - The script will generate:
+     - A graph of the number of movies released per year.
+     - A graph showing political events categorized by crisis type.
+   - Check the terminal for any debug output, such as:
+     - Column names in the datasets (`movies_df`, `political_df`).
+     - Previews of the datasets using `.head()`.
+
+6. **Update the Script (if needed)**:
+   - Based on the debug output, ensure the script is using the correct column names. For example:
+     ```python
+     movies_df["release_date"] = pd.to_datetime(movies_df["<actual_column_name>"])
      ```
 
-5. **Run the User Interface**:
-   - Launch the UI for interactive exploration:
+7. **Deactivate the Virtual Environment**:
+   - After running the project, deactivate the virtual environment:
      ```bash
-     python app.py
+     deactivate
      ```
-   - Access the interface at `http://localhost:5000`.
-### How to Test the Project
 
-1. **Unit Testing**:
-   - Test individual scripts (e.g., data collection, analysis) using:
+### Steps to Test the Project
+
+1. **Verify Virtual Environment Activation**:
+   - Ensure the virtual environment is active before running tests:
+     ```bash
+     source .venv/Scripts/activate  # Git Bash
+     .venv\Scripts\activate         # Command Prompt
+     ```
+
+2. **Check Data Integrity**:
+   - Run the analysis script to ensure data loads correctly:
+     ```bash
+     python analyze_data.py
+     ```
+   - Confirm the script outputs column names and previews for:
+     - `movies_df` (Movies DataFrame)
+     - `political_df` (Political Events DataFrame)
+
+3. **Test Individual Functions**:
+   - Use `pytest` to test individual components:
      ```bash
      pytest tests/
      ```
+   - Ensure the following are tested:
+     - Data loading functions for `movies.json` and `political_events.csv`.
+     - Preprocessing logic, such as handling missing `release_date`.
 
-2. **Integration Testing**:
-   - Ensure modules like data processing and visualization work together:
+4. **Integration Testing**:
+   - Test how different modules work together:
      ```bash
-     python integration_test.py
+     python analyze_data.py
      ```
+   - Confirm the outputs match expectations:
+     - Number of movies counted correctly.
+     - Political events grouped and summarized by type.
 
-3. **User Testing**:
-   - Open the user interface and test the following functionalities:
-     - Search for specific movies or political events.
-     - Filter results by decade, movie title, or political event.
+5. **Manual User Testing**:
+   - Manually review the debug outputs for errors or inconsistencies:
+     - Are all required columns present (e.g., `release_date`)?
+     - Are DataFrame previews showing expected data?
 
-4. **Performance Metrics**:
-   - Evaluate system performance by tracking:
-     - Response time for queries.
-     - Accuracy of data retrieval.
+6. **Performance Testing**:
+   - Check the runtime of the analysis script:
+     ```bash
+     time python analyze_data.py
+     ```
+   - Ensure the runtime is reasonable based on the dataset size.
 
+7. **Log and Fix Errors**:
+   - If issues are found:
+     - Note the error in the debug output.
+     - Update the script (e.g., correct column names or missing fields).
+     - Re-run the tests.
+
+8. **Deactivate the Virtual Environment**:
+   - After completing tests, deactivate the environment:
+     ```bash
+     deactivate
+     ```     ```
 ### Conclusion
 
 This project highlights the intersection of horror films and political climates, showcasing the horror genre as a lens through which societal fears and political anxieties are reflected. By analyzing horror movies across decades and comparing them to major political events, this project demonstrates the role of the genre as a form of cultural commentary.
