@@ -1,81 +1,81 @@
-# Horror Movies and Political Climate Analysis
+Horror Movies and Political Climate Analysis
+Project Overview
+This project analyzes popular horror movies to explore how they reflect or respond to the political environment of their respective decades. By examining the themes, plots, and societal anxieties presented in these films, the project draws connections between the horror genre and the sociopolitical context of the times.
 
-This project explores how popular horror movies reflect or respond to the political environments of their respective decades. By analyzing themes, plots, and societal anxieties, we aim to draw connections between the horror genre and sociopolitical contexts over time.
+Features:
+Data Collection: Gather horror movies by decade, including titles, release years, box office performance, and critical reception.
+Analysis: Examine political events or movements occurring during each film's release decade.
+Visualization: Highlight correlations between horror film themes and political climates through charts and graphs.
+Interactive Dashboard: Allow users to explore data by decade or political event.
+Tools and Technologies
+Programming Language:
+Python: For data analysis and visualization.
+Libraries:
+Pandas: For data manipulation and analysis.
+Matplotlib/Seaborn: For data visualization.
+Beautiful Soup/Scrapy: For web scraping movie data (if applicable).
+APIs:
+IMDb API: To gather movie-related data (e.g., genre, ratings).
+Political Event Databases: APIs or datasets documenting political events (e.g., US government archives, Wikipedia).
+Data Storage:
+CSV: For storing datasets.
+SQLite: Optional for structured storage.
+Integration Plan
+Data Collection: Gather horror movie data and political event data.
+Preprocessing: Clean and preprocess the data to ensure consistency.
+Exploratory Data Analysis (EDA): Uncover patterns in the data.
+Visualization: Create visual representations of findings.
+Dashboard Development: Present the analysis interactively.
+Problem Description
+There is often a disconnect between popular culture, particularly film, and the sociopolitical issues that shape society. This project bridges this gap by showing how horror movies serve as a lens for understanding historical and political contexts.
 
-## Features
-- **Data Collection**: Horror movies by decade, including titles, release years, box office performance, and critical reception.
-- **Political Context Analysis**: Examination of political events and movements occurring during each film’s release decade.
-- **Visualizations**: Trends illustrating correlations between horror film themes and political climates.
-- **Interactive Dashboard**: A user-friendly interface to explore data by decade or political event.
+Opportunities and Goals
+Primary Goal:
+Analyze how horror movies from various decades reflect and respond to the political environment of their times.
 
-## Tools and Technologies
-- **Programming Language**: Python
-- **Libraries**:
-  - `pandas` for data manipulation and analysis.
-  - `matplotlib`/`seaborn` for data visualization.
-  - `Beautiful Soup`/`Scrapy` for web scraping (if needed).
-- **APIs**:
-  - IMDb API for movie-related data.
-  - Political Event Databases for documenting significant historical events.
-- **Data Storage**: SQLite or CSV files for datasets.
-
-## Problem Statement
-While horror movies are a staple of American cinema, their potential as a lens for understanding historical and political contexts is often overlooked. This project bridges the gap by exploring how horror films engage with societal fears and reflect political climates.
-
-## Goals
-### Primary Goal
-To analyze horror movies across decades, understanding how their themes and narratives reflect societal anxieties and political environments.
-
-### Additional Goals
-1. **Identify Patterns**: Highlight recurring themes and motifs in horror films linked to significant political events.
-2. **Cultural Analysis**: Examine portrayals of marginalized groups and social justice issues.
-3. **Visual Representations**: Develop visual aids mapping movie releases against political events.
-4. **Engagement**: Present findings in an accessible format, inviting discussions on societal and political reflections in horror films.
-
-## Integration Plan
-1. Collect horror movie and political event data.
-2. Clean and preprocess data for consistency.
-3. Perform exploratory data analysis (EDA) to identify patterns.
-4. Create visualizations to highlight findings.
-5. Develop an interactive dashboard for user exploration.
-
-## Evaluation Methods
-- **Testing**: Unit testing, integration testing, and user acceptance testing (UAT) for functionality.
-- **User Feedback**: Surveys, focus groups, and interviews to assess usability and satisfaction.
-- **Performance Metrics**:
-  - Usage statistics: User engagement and task completion rates.
-  - Error rates: Track bugs and issues.
-  - Load times and response times: Ensure smooth performance.
-
-## Post-Launch Evaluation
-- Conduct follow-up surveys to gauge long-term impact.
-- Use performance metrics to identify areas for iterative improvement.
-
-## Conclusion
-This project demonstrates how horror films reflect societal fears and engage with the political landscapes of their times. By leveraging data analysis, visualizations, and interactive tools, we uncover the genre's role as a medium for cultural commentary and historical reflection.
-
----
-
-## Running the Project
-
-### Prerequisites
-- Python installed on your machine.
-- Required libraries installed via `pip install -r requirements.txt`.
-
-### Steps to Run
-1. **Clone the Repository**: 
-   ```bash
-   git clone https://github.com/your-repo/horror-movie-analysis.git
-   cd horror-movie-analysis
-2. Set Virtual Environment
+Additional Goals:
+Identify Patterns: Link recurring themes in horror films to political events.
+Cultural Analysis: Explore how horror films address marginalized groups and social justice issues.
+Visualization: Create timelines mapping notable horror films against political events.
+Audience Engagement: Present findings through a structured report or dashboard.
+Evaluation Methods
+Testing:
+Unit Testing: Test individual code components for functionality.
+Integration Testing: Ensure modules work seamlessly together.
+User Acceptance Testing (UAT): Gather end-user feedback before rollout.
+User Feedback:
+Conduct surveys, focus groups, and interviews to gauge usability.
+Performance Metrics:
+Track error rates, task completion rates, and application performance.
+How to Run the Project
+Prerequisites:
+1. Python: Ensure Python 3.7+ is installed.
+2. Virtual Environment:
 python -m venv env
-source env/bin/activate  # On Windows: .\env\Scripts\activate
-3. Install Dependencies:
+source env/bin/activate  # For Mac/Linux
+.\env\Scripts\activate   # For Windows
+3. Install Dependencies: 
 pip install -r requirements.txt
-4. Run Data Integration:
-python data_integration.py
-5. Analyze Data:
-python analyze_data.py
-6. Visualize Data: Visualizations are generated using matplotlib and seaborn. Run the visualization script:
-python visualize_data.py
-7. View Results: Results are saved as .png files in the project directory for review.
+Steps:
+1. Clone the Repository:
+git clone https://github.com/<your-repo>/horror-movie-analysis.git
+cd horror-movie-analysis
+2. Run the Scripts:
+Web Scraper: Fetch movie data using the web_scraper.py script:
+	python web_scraper.py
+Convert Excel to CSV:
+	python convert_excel_to_csv.py
+Integrate Data:
+	python data_integration.py
+Analyze Data:
+	python analyze_data.py
+3. Test Visualizations: Visualizations are generated and saved as .png files in the project directory.
+4. Push Changes to GitHub:
+git add .
+git commit -m "Updated project with analysis and visualizations"
+git push
+Conclusion
+This project reveals the intersection of horror movies and political climates across decades, highlighting the horror genre as a medium for cultural commentary and historical reflection.
+
+
+
