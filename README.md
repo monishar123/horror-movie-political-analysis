@@ -169,7 +169,6 @@ To analyze popular horror movies from various decades to understand how their th
 This project generates visualizations to explore the relationship between horror movie production and global political climates. Below is an example of a key visualization created during the analysis:
 
 ### Movies by Crisis and Year
-![Movies by Crisis and Year](path/to/your/image.jpg)
 
 ### Description
 This stacked bar chart shows the number of horror movies released each year and their correlation with various crisis types. Each bar represents a year, while the segments within each bar correspond to different types of crises (e.g., Cold War, Civil Rights, Technology).
