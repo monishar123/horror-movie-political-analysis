@@ -1,4 +1,3 @@
-TMDB_API_KEY=47370f021e29ef5dfbd2cbf6b8e15516
 from dotenv import load_dotenv
 import os
 
@@ -8,3 +7,4 @@ load_dotenv()
 # Retrieve API key
 API_KEY = os.getenv("TMDB_API_KEY")
 print(f"API Key: {API_KEY}")
+

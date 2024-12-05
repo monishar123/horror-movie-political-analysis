@@ -1,4 +1,4 @@
-	Crisis	Year	Type of Crisis
+	Crisis;	Year;	Type of Crisis
 1	Rashidi–Saudi War (1903–1921)	1903	Middle East
 2	The Mexican Revolution (1910–1920) Francsico Madero proclaims the elections of 1910 null and void and calls for an armed revolution at 6 p.m. against the illegitimate presidency/dictatorship of Porfirio Díaz. The revolution led to the ousting of Díaz (who ruled from 1876 to 1880 and since 1884) six months later. The revolution progressively became a civil war with multiple factions and phases, culminating with the Mexican Constitution of 1917, but combat would persist for three more years.	1910	South America
 3	Portugal became the first republican country in the century after the 5 October 1910 revolution, ending its long-standing monarchy and creating the First Portuguese Republic in 1911.	1910	Europe

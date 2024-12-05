@@ -1,21 +1,23 @@
 import requests
-from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+import os
 
-# URL of the horror movie list (replace with an actual URL)
-url = "https://real-movie-data-source.com" # <-- Change this URL
+# Load environment variables
+load_dotenv()
 
-# Make a request to fetch the webpage
-response = requests.get(url)
+API_KEY = os.getenv("TMDB_API_KEY")
+url = "https://api.themoviedb.org/3/movie/popular"
 
-# Check if the request was successful
-if response.status_code == 200:
-    # Parse the content of the page
-    soup = BeautifulSoup(response.text, 'html.parser')
+params = {
+    "api_key": API_KEY,  # Include the API key here
+    "language": "en-US",
+    "page": 1
+}
 
-    # Example: Extract movie titles (modify this to match the actual HTML structure)
-    movie_titles = soup.find_all('h2', class_='movie-title')  # <-- Adjust as needed
-    for title in movie_titles:
-        print(title.text)  # Print each movie title
-else:
-    print("Failed to retrieve the page.")
-movie_titles = soup.find_all('h2', class_='movie-title')  # Adjust to real tags/classes
+try:
+    response = requests.get(url, params=params)
+    response.raise_for_status()
+    data = response.json()
+    print("Data retrieved successfully:", data)
+except requests.exceptions.RequestException as e:
+    print("An error occurred:", e)

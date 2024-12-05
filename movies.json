@@ -1,0 +1,13 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "title": "Movie 1",
+            "release_date": "2024-01-01"
+        },
+        {
+            "title": "Movie 2",
+            "release_date": "2024-02-01"
+        }
+    ]
+}
