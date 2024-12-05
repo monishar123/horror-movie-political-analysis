@@ -164,6 +164,27 @@ To analyze popular horror movies from various decades to understand how their th
      ```bash
      deactivate
      ```     ```
+## Example Visualization: Movies by Crisis and Year
+
+This project generates visualizations to explore the relationship between horror movie production and global political climates. Below is an example of a key visualization created during the analysis:
+
+### Movies by Crisis and Year
+![Movies by Crisis and Year](path/to/your/image.jpg)
+
+### Description
+This stacked bar chart shows the number of horror movies released each year and their correlation with various crisis types. Each bar represents a year, while the segments within each bar correspond to different types of crises (e.g., Cold War, Civil Rights, Technology).
+
+### Key Insights
+- The chart highlights peaks in horror movie production during certain crises, suggesting that societal anxieties may drive creative narratives within the genre.
+- Crisis types like "Cultural," "Cold War," and "Civil Rights" appear prominently in some years, reflecting their potential influence on horror movie themes.
+
+### Challenges and Improvements
+- **Legend Complexity**: With a large number of crisis types, the legend can be overwhelming. Future iterations could group similar crises into broader categories for clarity.
+- **Readability**: The x-axis labels are crowded and difficult to read. Adjustments like label rotation or filtering by decades may improve presentation.
+- **Focused Analysis**: Filtering the data by specific decades or crisis categories can provide deeper insights into trends.
+
+This visualization demonstrates the project’s ability to identify and analyze patterns between horror movie themes and global political climates, aligning with the overall goal of showcasing the genre as cultural commentary.
+
 ### Conclusion
 
 This project highlights the intersection of horror films and political climates, showcasing the horror genre as a lens through which societal fears and political anxieties are reflected. By analyzing horror movies across decades and comparing them to major political events, this project demonstrates the role of the genre as a form of cultural commentary.
