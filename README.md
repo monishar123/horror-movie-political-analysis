@@ -40,25 +40,22 @@ This project analyzes popular horror movies across various decades to explore ho
 
 ## How to Run the Project
 
-# Setting Up the Project
+# How to Run the Project
 
-## Step 1: Set Up a Virtual Environment 1. **Create the Environment**: ```bash python -m venv .venv ``` 2. **Activate the Environment**: - For Git Bash: ```bash source .venv/Scripts/activate ``` - For Command Prompt: ```bash .venv\Scripts\activate ```
+To run the project, follow these steps: 
+Step 1, clone the repository by opening your terminal or command prompt and running `git clone https://github.com/monishar123/horror-movie-political-analysis.git`, then navigate into the project folder using `cd horror-movie-political-analysis`. 
 
-## Step 2: Install Dependencies 1. Install required Python libraries: ```bash pip install -r requirements.txt ```
+Step 2, set up a virtual environment by running `python -m venv .venv` and activating it with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate` on Mac/Linux. 
 
-## Step 3: Add API Key 1. **Create a `.env` File**: - In the project folder, create a file named `.env`. 2. **Add the API Key**: ```makefile TMDB_API_KEY=your_api_key_here ``` Replace `your_api_key_here` with your actual API key.
+Step 3, install the required dependencies by running `pip install -r requirements.txt`. Step 
 
-## Step 4: Run the Analysis 1. **Execute the Script**: ```bash python analyze_data.py ``` 2. **Review Outputs**: - **Graphs**: Visualizations showing the number of horror movies per year and political events categorized by crisis type. - **Debug Outputs**: Preview datasets and detect any issues in the terminal.
+4, create a `.env` file in the project directory and add your TMDB API key in the format `TMDB_API_KEY=your_api_key_here`, replacing `your_api_key_here` with your actual API key. 
 
-## Step 5: Test the Project 1. **Run Unit Tests**: ```bash pytest tests/ ``` 2. **Verify Outputs**: - Ensure the script processes data correctly (e.g., movie release years, political categorizations). - Manually review debug outputs for errors or missing data.
+Step 5, execute the main analysis script with `python analyze_data.py`, and view the outputs, such as generated graphs and insights, which will appear in the output directory or terminal. Optionally, in 
 
-## Step 6: Wrap Up 1. **Deactivate the Virtual Environment**: ```bash deactivate ``` 2. **Explore and Share**: - Use the generated graphs for discussions or assignments. - Provide feedback or suggestions via the GitHub repository.
+Step 6, test the project by running `pytest tests/` to ensure the script processes data correctly and passes all tests. 
 
----
-
-# Key Insights 1. **Horror Movie Trends**: Peaks in horror movie production often align with societal crises, suggesting that cultural anxieties influence creative narratives. 2. **Crisis Types**: Categories such as "Cultural," "Cold War," and "Civil Rights" prominently appear in certain years, reflecting their potential impact on horror movie themes. 3. **Evolving Genre**: Trends highlight the horror genre’s role in reflecting societal fears and political challenges.
-
----
+Step 7, when finished, deactivate the virtual environment by running `deactivate`. Make sure Python 3.8 or higher is installed on your system before starting. If you encounter any issues, refer to the GitHub repository’s README or open an issue for support.
 
 # Challenges and Improvements 1. **Legend Complexity**: Simplify by grouping similar crisis types into broader categories for clarity. 2. **Readability**: Improve x-axis label presentation by rotating or filtering by decades. 3. **Focused Analysis**: Deepen insights by filtering data by specific decades or crisis types.
 
