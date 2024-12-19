@@ -57,8 +57,10 @@ Step 6, test the project by running `pytest tests/` to ensure the script process
 
 Step 7, when finished, deactivate the virtual environment by running `deactivate`. Make sure Python 3.8 or higher is installed on your system before starting. If you encounter any issues, refer to the GitHub repository’s README or open an issue for support.
 
-# Challenges and Improvements 1. **Legend Complexity**: Simplify by grouping similar crisis types into broader categories for clarity. 2. **Readability**: Improve x-axis label presentation by rotating or filtering by decades. 3. **Focused Analysis**: Deepen insights by filtering data by specific decades or crisis types.
+# Challenges and Improvements
+1. **Legend Complexity**: Simplify by grouping similar crisis types into broader categories for clarity.  
+2. **Readability**: Improve x-axis label presentation by rotating or filtering by decades.  
+3. **Focused Analysis**: Deepen insights by filtering data by specific decades or crisis types.
 
----
-
-# Conclusion This project demonstrates the intersection of horror films and political climates, showcasing the horror genre as a lens for examining societal fears and political anxieties. By analyzing films across decades, this work emphasizes the genre's cultural significance and evolution in response to societal changes.
+# Conclusion
+This project demonstrates the intersection of horror films and political climates, showcasing the horror genre as a lens for examining societal fears and political anxieties. By analyzing films across decades, this work emphasizes the genre's cultural significance and evolution in response to societal changes.
