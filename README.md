@@ -51,122 +51,92 @@ To analyze popular horror movies from various decades to understand how their th
 
 ### Steps to Run the Project
 
-1. **Activate Virtual Environment**:
-   - Navigate to your project directory:
-     ```bash
-     cd ~/Documents/Projects/horror-movie-analysis-main/horror-movie-political-analysis
-     ```
-   - Activate the virtual environment:
-     - For **Git Bash**:
-       ```bash
-       source .venv/Scripts/activate
-       ```
-     - For **Command Prompt**:
-       ```cmd
-       .venv\Scripts\activate
-       ```
+Step 1: Setting Up the Project
+Download the Project
 
-2. **Install Dependencies**:
-   - Ensure all required packages are installed:
-     ```bash
-     pip install -r requirements.txt
-     ```
+Clone the repository or download it as a ZIP file from GitHub.
+If downloading as ZIP, extract the files to a folder on your computer.
+Install Python
+Ensure Python (version 3.8 or higher) is installed on your computer. You can download it from python.org.
 
-3. **Set Up Environment Variables**:
-   - If your project uses an API key (like TMDB API key), create a `.env` file in your project’s root directory with the following content:
-     ```text
-     TMDB_API_KEY=your_api_key_here
-     ```
-   - Make sure to replace `your_api_key_here` with your actual API key.
+Navigate to the Project Folder
+Open a terminal (Command Prompt, Git Bash, etc.) and go to the project directory:
 
-4. **Run the Data Analysis Script**:
-   - Execute the script to load, process, and analyze the movie and political events data:
-     ```bash
-     python analyze_data.py
-     ```
+bash
+Copy code
+cd ~/path/to/horror-movie-political-analysis
+Activate the Virtual Environment
 
-5. **Review Output**:
-   - The script will generate:
-     - A graph of the number of movies released per year.
-     - A graph showing political events categorized by crisis type.
-   - Check the terminal for any debug output, such as:
-     - Column names in the datasets (`movies_df`, `political_df`).
-     - Previews of the datasets using `.head()`.
+For Git Bash:
+bash
+Copy code
+source .venv/Scripts/activate
+For Command Prompt:
+bash
+Copy code
+.venv\Scripts\activate
+Install Required Libraries
+Install the necessary Python packages:
 
-6. **Update the Script (if needed)**:
-   - Based on the debug output, ensure the script is using the correct column names. For example:
-     ```python
-     movies_df["release_date"] = pd.to_datetime(movies_df["<actual_column_name>"])
-     ```
+bash
+Copy code
+pip install -r requirements.txt
+Step 2: Preparing the Project
+Add Your API Key
+If the project uses an API (like TMDB), you need an API key:
 
-7. **Deactivate the Virtual Environment**:
-   - After running the project, deactivate the virtual environment:
-     ```bash
-     deactivate
-     ```
+Create a file named .env in the project folder.
+Add this line:
+makefile
+Copy code
+TMDB_API_KEY=your_api_key_here
+Replace your_api_key_here with your actual API key.
+Verify the Setup
+Ensure the virtual environment is active, and all dependencies are installed.
 
-### Steps to Test the Project
+Step 3: Running the Project
+Analyze the Data
+Run the analysis script to process the data and generate outputs:
 
-1. **Verify Virtual Environment Activation**:
-   - Ensure the virtual environment is active before running tests:
-     ```bash
-     source .venv/Scripts/activate  # Git Bash
-     .venv\Scripts\activate         # Command Prompt
-     ```
+bash
+Copy code
+python analyze_data.py
+Review the Outputs
+The script will generate:
 
-2. **Check Data Integrity**:
-   - Run the analysis script to ensure data loads correctly:
-     ```bash
-     python analyze_data.py
-     ```
-   - Confirm the script outputs column names and previews for:
-     - `movies_df` (Movies DataFrame)
-     - `political_df` (Political Events DataFrame)
+Graphs showing the number of movies released per year and political events categorized by type.
+Debug information in the terminal, such as dataset previews (movies_df and political_df).
+Adjust If Needed
+If any errors appear (e.g., missing columns or data issues), update the script to match the dataset structure.
 
-3. **Test Individual Functions**:
-   - Use `pytest` to test individual components:
-     ```bash
-     pytest tests/
-     ```
-   - Ensure the following are tested:
-     - Data loading functions for `movies.json` and `political_events.csv`.
-     - Preprocessing logic, such as handling missing `release_date`.
+Step 4: Testing the Project
+Unit Testing
+Test specific parts of the project with:
 
-4. **Integration Testing**:
-   - Test how different modules work together:
-     ```bash
-     python analyze_data.py
-     ```
-   - Confirm the outputs match expectations:
-     - Number of movies counted correctly.
-     - Political events grouped and summarized by type.
+bash
+Copy code
+pytest tests/
+Integration Testing
+Run the main script again to ensure all parts work together:
 
-5. **Manual User Testing**:
-   - Manually review the debug outputs for errors or inconsistencies:
-     - Are all required columns present (e.g., `release_date`)?
-     - Are DataFrame previews showing expected data?
+bash
+Copy code
+python analyze_data.py
+Performance Check
+Check how long the script takes to run:
 
-6. **Performance Testing**:
-   - Check the runtime of the analysis script:
-     ```bash
-     time python analyze_data.py
-     ```
-   - Ensure the runtime is reasonable based on the dataset size.
+bash
+Copy code
+time python analyze_data.py
+Step 5: Wrap Up
+Deactivate the Virtual Environment
+When finished, deactivate the environment:
 
-7. **Log and Fix Errors**:
-   - If issues are found:
-     - Note the error in the debug output.
-     - Update the script (e.g., correct column names or missing fields).
-     - Re-run the tests.
-
-8. **Deactivate the Virtual Environment**:
-   - After completing tests, deactivate the environment:
-     ```bash
-     deactivate
-     ```     ```
-## Example Visualization: Movies by Crisis and Year
-
-This project generates visualizations to explore the relationship between horror movie production and global political climates. Below is an example of a key visualization created during the analysis:
+bash
+Copy code
+deactivate
+Explore and Share
+Use the graphs and analysis as teaching tools. Feel free to share feedback or suggestions to improve the project.
 
 ### Movies by Crisis and Year
 
