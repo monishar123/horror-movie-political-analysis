@@ -76,4 +76,4 @@ Copy code
 deactivate
 
 Conclusion
-This project explores the intersection of horror movies and political climates, showcasing how the genre reflects societal fears and anxieties across different decades. By following the steps above, you can analyze key insights, generate visualizations, and understand the impact of political environments on horror movie themes. If you encounter any issues, please refer to this guide or the repository’s README for troubleshooting.
+This project explores the intersection of horror movies and political climates, showcasing how the genre reflects societal fears and anxieties across different decades. By following the steps above, you can analyze key insights, generate visualizations, and understand the impact of political environments on horror movie themes. 
