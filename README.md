@@ -1,76 +1,65 @@
 # Horror Movies and Political Climate Analysis
 
 ## Project Overview
-This project aims to analyze popular horror movies across various decades to explore how their themes, narratives, and societal anxieties reflect and respond to the political environment of their respective times. By identifying key films, examining political contexts, and creating visualizations, this project seeks to demonstrate the role of the horror genre as a cultural commentary.
+This project analyzes popular horror movies across various decades to explore how their themes, narratives, and societal anxieties reflect and respond to the political environments of their times. By identifying key films, examining political contexts, and creating visualizations, this project demonstrates the role of the horror genre as a form of cultural commentary.
 
 ---
 
 ## Goals
 
 ### Primary Goal
-To analyze popular horror movies from various decades to understand how their themes, narratives, and societal anxieties reflect and respond to the political environment of their respective times.
+- **Analyze popular horror movies from various decades** to understand how their themes, narratives, and societal anxieties reflect and respond to the political environment of their respective times.
 
-### Additional Goals/Objectives
+### Additional Goals
 1. **Identify Patterns**: Examine recurring themes and motifs within horror films across different decades, linking them to significant political events and societal changes.
 2. **Cultural Analysis**: Investigate how horror films portray marginalized groups and address social justice issues, highlighting the genre's evolution in response to shifting societal attitudes.
-3. **Create a Visual Representation**: Develop a timeline or visual aid that maps the release of notable horror films against major political events to illustrate correlations between film and political climate.
+3. **Create a Visual Representation**: Develop a timeline or visual aid that maps the release of notable horror films against major political events.
 4. **Engage with Audiences**: Present findings through a well-structured report or presentation that invites discussion about the implications of horror films in reflecting societal fears and the political landscape.
 
 ---
 
 ## Features
-- Data collection of horror movies by decade, including titles, release years, and box office performance.
-- Analysis of political events or movements occurring during the decade of each film’s release.
-- Visualization of trends showing correlations between horror film themes and political climates.
+- **Data Collection**: Includes horror movies by decade (titles, release years, box office performance).
+- **Political Context**: Analysis of political events or movements coinciding with each film’s release decade.
+- **Visualization**: Illustrates correlations between horror film themes and political climates.
 
 ---
 
 ## Tools and Technologies
 - **Programming Languages**: Python (for data analysis and visualization)
 - **Libraries**:
-  - Pandas: For data manipulation and analysis
-  - NumPy: For numerical computations
+  - Pandas (data manipulation and analysis)
+  - NumPy (numerical computations)
 - **APIs**:
-  - IMDb API: To gather movie-related data (e.g., genre, ratings)
-  - Political Event Databases: APIs or datasets that document political events (e.g., US government archives, Wikipedia)
-- **Web Development**:
-  - HTML/CSS/JavaScript: For developing a user-friendly interface
+  - IMDb API (for movie data: genre, ratings)
+  - Political event databases (e.g., US government archives, Wikipedia)
+- **Web Development**: HTML/CSS/JavaScript for a user-friendly interface
 - **Data Sources**:
-  - IMDb, Rotten Tomatoes: For movie data
-  - News APIs: For political context and related articles
+  - IMDb and Rotten Tomatoes (movie data)
+  - News APIs (political context and articles)
 
 ---
 
 ## How to Run the Project
-Step 1: Access the Repository
-Visit the Repository
-Open the project on GitHub at this link:
-Horror Movie and Political Analysis
 
-Download the Project
+### Step 1: Access the Repository
+1. Visit the [GitHub Repository](https://github.com/monishar123/horror-movie-political-analysis).
+2. **Download the Project**:
+   - Clone with HTTPS: `git clone <repository_url>`
+   - Download ZIP: Extract the project to a folder on your computer.
 
-Click the green Code button on the repository page.
-Choose one of the following:
-Clone with HTTPS: Copy the URL and use git clone in your terminal.
-Download ZIP: Download the project as a ZIP file and extract it to a folder on your computer.
-Step 2: Set Up the Environment
-Install Python
-Make sure Python (version 3.8 or higher) is installed. Download it from python.org.
-
-Navigate to the Project Folder
-Open a terminal and change to the project directory. Replace /path/to/your/project with the actual path to the folder:
-
-bash
-Copy code
-cd /path/to/your/project
-Set Up a Virtual Environment
-Create and activate a virtual environment:
-
-Create the environment:
+### Step 2: Set Up the Environment
+1. **Install Python**: Ensure Python 3.8 or higher is installed.
+2. **Navigate to the Project Folder**:  
+   ```bash
+   cd /path/to/your/project
+Setting Up the Project
+Step 1: Set Up a Virtual Environment
+Create the Environment:
 bash
 Copy code
 python -m venv .venv
-Activate the environment:
+Activate the Environment:
 For Git Bash:
 bash
 Copy code
@@ -79,73 +68,50 @@ For Command Prompt:
 bash
 Copy code
 .venv\Scripts\activate
-Install Dependencies
-Install the required Python libraries:
-
+Step 2: Install Dependencies
+Install required Python libraries:
 bash
 Copy code
 pip install -r requirements.txt
 Step 3: Add API Key
-If the project requires an API key (e.g., TMDB API), you’ll need to set it up:
-
-Create a file named .env in the project folder.
-Add the following line to the file:
+Create a .env File:
+In the project folder, create a file named .env.
+Add the API Key:
 makefile
 Copy code
 TMDB_API_KEY=your_api_key_here
 Replace your_api_key_here with your actual API key.
 Step 4: Run the Analysis
-Execute the Script
-Run the main analysis script:
-
+Execute the Script:
 bash
 Copy code
 python analyze_data.py
-Review the Outputs
-
-Graphs will be generated showing:
-The number of horror movies released per year.
-Political events categorized by crisis type.
-Debug outputs in the terminal will show previews of the datasets and any issues detected.
+Review Outputs:
+Graphs: Visualizations showing the number of horror movies per year and political events categorized by crisis type.
+Debug Outputs: Preview datasets and detect any issues in the terminal.
 Step 5: Test the Project
-Run Unit Tests
-Test individual components using:
-
+Run Unit Tests:
 bash
 Copy code
 pytest tests/
-Verify Outputs
-Check that the script processes data correctly, including movie release years and political event categorizations.
-
-Manually Review
-Review debug outputs for any missing data or errors.
-
+Verify Outputs:
+Ensure the script processes data correctly (e.g., movie release years, political categorizations).
+Manually review debug outputs for errors or missing data.
 Step 6: Wrap Up
-Deactivate the Environment
-When finished, deactivate the virtual environment:
-
+Deactivate the Virtual Environment:
 bash
 Copy code
 deactivate
-Explore and Share
-Use the graphs and insights for class discussions or assignments. Feel free to provide feedback or suggestions for improvements via the GitHub repository.
-
-### Key Insights
-- The chart highlights peaks in horror movie production during certain crises, suggesting that societal anxieties may drive creative narratives within the genre.
-- Crisis types like "Cultural," "Cold War," and "Civil Rights" appear prominently in some years, reflecting their potential influence on horror movie themes.
-
-### Challenges and Improvements
-- **Legend Complexity**: With a large number of crisis types, the legend can be overwhelming. Future iterations could group similar crises into broader categories for clarity.
-- **Readability**: The x-axis labels are crowded and difficult to read. Adjustments like label rotation or filtering by decades may improve presentation.
-- **Focused Analysis**: Filtering the data by specific decades or crisis categories can provide deeper insights into trends.
-
-This visualization demonstrates the project’s ability to identify and analyze patterns between horror movie themes and global political climates, aligning with the overall goal of showcasing the genre as cultural commentary.
-
-### Conclusion
-
-This project highlights the intersection of horror films and political climates, showcasing the horror genre as a lens through which societal fears and political anxieties are reflected. By analyzing horror movies across decades and comparing them to major political events, this project demonstrates the role of the genre as a form of cultural commentary.
-
-Through data collection, analysis, visualization, and an interactive user interface, this project provides insights into how the horror genre evolves in response to societal changes and challenges. It invites audiences to explore the connections between film and political history, fostering a deeper understanding of the cultural significance of horror movies.
-
-The findings from this project can serve as a foundation for further exploration of popular culture as a response to societal issues, encouraging discussion about how media reflects and influences our perceptions of the world.
-
+Explore and Share:
+Use the generated graphs for discussions or assignments.
+Provide feedback or suggestions via the GitHub repository.
+Key Insights
+Horror Movie Trends: Peaks in horror movie production often align with societal crises, suggesting that cultural anxieties influence creative narratives.
+Crisis Types: Categories such as "Cultural," "Cold War," and "Civil Rights" prominently appear in certain years, reflecting their potential impact on horror movie themes.
+Evolving Genre: Trends highlight the horror genre’s role in reflecting societal fears and political challenges.
+Challenges and Improvements
+Legend Complexity: Simplify by grouping similar crisis types into broader categories for clarity.
+Readability: Improve x-axis label presentation by rotating or filtering by decades.
+Focused Analysis: Deepen insights by filtering data by specific decades or crisis types.
+Conclusion
+This project demonstrates the intersection of horror films and political climates, showcasing the horror genre as a lens for examining societal fears and political anxieties. By analyzing films across decades, this work emphasizes the genre's cultural significance and evolution in response to societal changes.
