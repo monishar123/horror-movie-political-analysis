@@ -43,19 +43,20 @@ This project analyzes popular horror movies across various decades to explore ho
 # How to Run the Project
 
 To run the project, follow these steps: 
-Step 1, clone the repository by opening your terminal or command prompt and running `git clone https://github.com/monishar123/horror-movie-political-analysis.git`, then navigate into the project folder using `cd horror-movie-political-analysis`. 
 
-Step 2, set up a virtual environment by running `python -m venv .venv` and activating it with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate` on Mac/Linux. 
+1. clone the repository by opening your terminal or command prompt and running `git clone https://github.com/monishar123/horror-movie-political-analysis.git`, then navigate into the project folder using `cd horror-movie-political-analysis`. 
 
-Step 3, install the required dependencies by running `pip install -r requirements.txt`. Step 
+2. set up a virtual environment by running `python -m venv .venv` and activating it with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate` on Mac/Linux. 
 
-4, create a `.env` file in the project directory and add your TMDB API key in the format `TMDB_API_KEY=your_api_key_here`, replacing `your_api_key_here` with your actual API key. 
+3. install the required dependencies by running `pip install -r requirements.txt`. Step 
 
-Step 5, execute the main analysis script with `python analyze_data.py`, and view the outputs, such as generated graphs and insights, which will appear in the output directory or terminal. Optionally, in 
+4. create a `.env` file in the project directory and add your TMDB API key in the format `TMDB_API_KEY=your_api_key_here`, replacing `your_api_key_here` with your actual API key. 
 
-Step 6, test the project by running `pytest tests/` to ensure the script processes data correctly and passes all tests. 
+5. execute the main analysis script with `python analyze_data.py`, and view the outputs, such as generated graphs and insights, which will appear in the output directory or terminal. Optionally, in 
 
-Step 7, when finished, deactivate the virtual environment by running `deactivate`. Make sure Python 3.8 or higher is installed on your system before starting. If you encounter any issues, refer to the GitHub repository’s README or open an issue for support.
+6. test the project by running `pytest tests/` to ensure the script processes data correctly and passes all tests. 
+
+7. when finished, deactivate the virtual environment by running `deactivate`. Make sure Python 3.8 or higher is installed on your system before starting. If you encounter any issues, refer to the GitHub repository’s README or open an issue for support.
 
 # Challenges and Improvements
 1. **Legend Complexity**: Simplify by grouping similar crisis types into broader categories for clarity.  
