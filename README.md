@@ -2,6 +2,17 @@
 
 This project analyzes popular horror movies across various decades to explore how their themes reflect and respond to political environments. 
 
+# Problem Description
+
+In contemporary discourse, there is often a disconnect between popular culture, particularly film, and the sociopolitical issues that shape society. While horror movies have been a staple of American cinema, their potential as a lens for understanding historical and political contexts is frequently overlooked. This project seeks to address the gap in research that explores how horror films not only reflect societal fears and anxieties but also engage with the political climate of their time.
+
+---
+
+# Opportunity
+
+By analyzing the themes and narratives of popular horror movies across different decades, this project leverages the opportunity to illuminate the complex relationship between film and politics. It aims to provide a deeper understanding of how horror films can serve as cultural commentaries, revealing societal concerns and influencing public perception. This exploration can foster greater appreciation for the horror genre as a significant medium for social critique and historical reflection.
+
+
 Follow the steps below to clone and set up the project: 
 
 **Step 1.** Clone the repository by opening your terminal or command prompt, navigating to the directory where you want to save the project, and running `git clone https://github.com/monishar123/horror-movie-political-analysis.git`. 
