@@ -44,7 +44,9 @@ This project analyzes popular horror movies across various decades to explore ho
 
 To run the project, follow these steps: 
 
-1. clone the repository by opening your terminal or command prompt and running `git clone https://github.com/monishar123/horror-movie-political-analysis.git`, then navigate into the project folder using `cd horror-movie-political-analysis`. 
+1. **Clone the Repository**: Open your terminal or command prompt, navigate to the directory where you want to save the project, and run:  
+   ```bash
+git clone https://github.com/monishar123/horror-movie-political-analysis.git 
 
 2. set up a virtual environment by running `python -m venv .venv` and activating it with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate` on Mac/Linux. 
 
