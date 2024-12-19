@@ -46,7 +46,7 @@ To run the project, follow these steps:
 
 1. **Clone the Repository**: Open your terminal or command prompt, navigate to the directory where you want to save the project, and run:  
    ```bash
-git clone https://github.com/monishar123/horror-movie-political-analysis.git 
+   git clone https://github.com/monishar123/horror-movie-political-analysis.git
 
 2. set up a virtual environment by running `python -m venv .venv` and activating it with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate` on Mac/Linux. 
 
