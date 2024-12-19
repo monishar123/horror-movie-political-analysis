@@ -42,31 +42,35 @@ To analyze popular horror movies from various decades to understand how their th
 ---
 
 ## How to Run the Project
+Step 1: Access the Repository
+Visit the Repository
+Open the project on GitHub at this link:
+Horror Movie and Political Analysis
 
-### Prerequisites
-- Install Python 3.7 or higher.
-- Install required libraries:
-  ```bash
-  pip install -r requirements.txt
-
-### Steps to Run the Project
-
-Step 1: Setting Up the Project
 Download the Project
 
-Clone the repository or download it as a ZIP file from GitHub.
-If downloading as ZIP, extract the files to a folder on your computer.
+Click the green Code button on the repository page.
+Choose one of the following:
+Clone with HTTPS: Copy the URL and use git clone in your terminal.
+Download ZIP: Download the project as a ZIP file and extract it to a folder on your computer.
+Step 2: Set Up the Environment
 Install Python
-Ensure Python (version 3.8 or higher) is installed on your computer. You can download it from python.org.
+Make sure Python (version 3.8 or higher) is installed. Download it from python.org.
 
 Navigate to the Project Folder
-Open a terminal (Command Prompt, Git Bash, etc.) and go to the project directory:
+Open a terminal and change to the project directory. Replace /path/to/your/project with the actual path to the folder:
 
 bash
 Copy code
-cd ~/path/to/horror-movie-political-analysis
-Activate the Virtual Environment
+cd /path/to/your/project
+Set Up a Virtual Environment
+Create and activate a virtual environment:
 
+Create the environment:
+bash
+Copy code
+python -m venv .venv
+Activate the environment:
 For Git Bash:
 bash
 Copy code
@@ -75,73 +79,56 @@ For Command Prompt:
 bash
 Copy code
 .venv\Scripts\activate
-Install Required Libraries
-Install the necessary Python packages:
+Install Dependencies
+Install the required Python libraries:
 
 bash
 Copy code
 pip install -r requirements.txt
-Step 2: Preparing the Project
-Add Your API Key
-If the project uses an API (like TMDB), you need an API key:
+Step 3: Add API Key
+If the project requires an API key (e.g., TMDB API), you’ll need to set it up:
 
 Create a file named .env in the project folder.
-Add this line:
+Add the following line to the file:
 makefile
 Copy code
 TMDB_API_KEY=your_api_key_here
 Replace your_api_key_here with your actual API key.
-Verify the Setup
-Ensure the virtual environment is active, and all dependencies are installed.
-
-Step 3: Running the Project
-Analyze the Data
-Run the analysis script to process the data and generate outputs:
+Step 4: Run the Analysis
+Execute the Script
+Run the main analysis script:
 
 bash
 Copy code
 python analyze_data.py
 Review the Outputs
-The script will generate:
 
-Graphs showing the number of movies released per year and political events categorized by type.
-Debug information in the terminal, such as dataset previews (movies_df and political_df).
-Adjust If Needed
-If any errors appear (e.g., missing columns or data issues), update the script to match the dataset structure.
-
-Step 4: Testing the Project
-Unit Testing
-Test specific parts of the project with:
+Graphs will be generated showing:
+The number of horror movies released per year.
+Political events categorized by crisis type.
+Debug outputs in the terminal will show previews of the datasets and any issues detected.
+Step 5: Test the Project
+Run Unit Tests
+Test individual components using:
 
 bash
 Copy code
 pytest tests/
-Integration Testing
-Run the main script again to ensure all parts work together:
+Verify Outputs
+Check that the script processes data correctly, including movie release years and political event categorizations.
 
-bash
-Copy code
-python analyze_data.py
-Performance Check
-Check how long the script takes to run:
+Manually Review
+Review debug outputs for any missing data or errors.
 
-bash
-Copy code
-time python analyze_data.py
-Step 5: Wrap Up
-Deactivate the Virtual Environment
-When finished, deactivate the environment:
+Step 6: Wrap Up
+Deactivate the Environment
+When finished, deactivate the virtual environment:
 
 bash
 Copy code
 deactivate
 Explore and Share
-Use the graphs and analysis as teaching tools. Feel free to share feedback or suggestions to improve the project.
-
-### Movies by Crisis and Year
-
-### Description
-This stacked bar chart shows the number of horror movies released each year and their correlation with various crisis types. Each bar represents a year, while the segments within each bar correspond to different types of crises (e.g., Cold War, Civil Rights, Technology).
+Use the graphs and insights for class discussions or assignments. Feel free to provide feedback or suggestions for improvements via the GitHub repository.
 
 ### Key Insights
 - The chart highlights peaks in horror movie production during certain crises, suggesting that societal anxieties may drive creative narratives within the genre.
