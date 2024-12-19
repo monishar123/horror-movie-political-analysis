@@ -15,17 +15,21 @@ By analyzing the themes and narratives of popular horror movies across different
 
 Follow the steps below to clone and set up the project: 
 
-**Step 1.** Clone the repository by opening your terminal or command prompt, navigating to the directory where you want to save the project, and running `git clone https://github.com/monishar123/horror-movie-political-analysis.git`. 
+**Step 1.** Clone the repository by opening your terminal or command prompt, navigating to the directory where you want to save the project, and running 
+`git clone https://github.com/monishar123/horror-movie-political-analysis.git`. 
 
-**Step 2. Set Up a Virtual Environment: Create a virtual environment with: bash: python -m venv .venv
+**Step 2. Set Up a Virtual Environment: Create a virtual environment with: 
+	bash: python -m venv .venv
 	Activate the virtual environment: On Windows: bash: .venv\Scripts\activate
 	On Mac/Linux: source .venv/bin/activate
 
 **Step 3.** Install Dependencies: Install the required Python packages by running: pip install -r requirements.txt
 
-**Step 4.** Add Your API Key: In the project directory, create a .env file and add the following line: TMDB_API_KEY=47370f021e29ef5dfbd2cbf6b8e15516
+**Step 4.** Add Your API Key: In the project directory, create a .env file and add the following line: 
+TMDB_API_KEY=47370f021e29ef5dfbd2cbf6b8e15516
 
 **Step 5.** Run the Analysis: Execute the main analysis script: bash: python analyze_data.py
+
 After the script completes, outputs such as graphs and insights will appear in your terminal or in the specified output folder.
 
 **Step 6.** ETest the Project (Optional): You can test the project by running: pytest tests/
